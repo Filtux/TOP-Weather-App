@@ -6,5 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Template</title>
     </head>
-    <body></body>
+    <body>
+        <div class="container">
+            <h1>Weather App</h1>
+            <form class="location-form">
+                <input type="text" class="location-input" placeholder="Enter location" required>
+                <button type="submit">Get Weather</button>
+            </form>
+            <div class="loading" style="display:none;">Loading...</div>
+            <div class="weather-info" style="display:none;">
+                <h2 class="weather-location"></h2>
+                <p class="weather-description"></p>
+                <p class="weather-temperature"></p>
+                <p class="weather-cloudCover"></p>
+                <p class="weather-precipitation"></p>
+                <p class="weather-uv"></p>
+            </div>
+            <div class="astronomy-info" style="display:none;">
+                <h2>Astronomy Information</h2>
+                <p class="sunrise"></p>
+                <p class="sunset"></p>
+                <p class="moonphase"></p>
+                <p class="moonrise"></p>
+                <p class="moonset"></p>
+            </div>
+        </div>
+    </body>
 </html>

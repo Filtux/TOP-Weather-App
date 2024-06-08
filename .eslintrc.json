@@ -18,6 +18,8 @@
         "linebreak-style": ["error", "windows"],
         "quotes": ["error", "single"],
         "semi": ["error", "always"],
+        "comma-dangle": ["error", "never"],
+        "no-multi-spaces": ["error"],
         "prettier/prettier": "error"
     }
 }
