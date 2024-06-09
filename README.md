@@ -1,1 +1,1 @@
-# Webpack-Template
+# Weather App that utilises the Weather API
