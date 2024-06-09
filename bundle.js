@@ -639,6 +639,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 var WEATHER_API_KEY = '6013851a6d2249b184e100322240706';
 var WEATHER_API_URL = "https://api.weatherapi.com/v1/forecast.json?key=".concat(WEATHER_API_KEY, "&q=");
+var DEFAULT_LOCATION = Adelaide;
 function fetchWeatherData(_x) {
   return _fetchWeatherData.apply(this, arguments);
 }
@@ -735,6 +736,9 @@ document.querySelector('.location-form').addEventListener('submit', /*#__PURE__*
     return _ref.apply(this, arguments);
   };
 }());
+window.addEventListener('load', function () {
+  fetchAndDisplayData(DEFAULT_LOCATION);
+});
 })();
 
 /******/ })()
