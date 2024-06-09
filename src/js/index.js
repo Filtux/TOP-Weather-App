@@ -3,6 +3,7 @@ import '../css/styles.css';
 
 const WEATHER_API_KEY = '6013851a6d2249b184e100322240706';
 const WEATHER_API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=`;
+const DEFAULT_LOCATION = 'Melbourne';
 
 async function fetchWeatherData(location) {
     try {
@@ -66,3 +67,17 @@ document
             alert('Could not fetch weather data for the given location.');
         }
     });
+
+window.addEventListener('load', async () => {
+    document.querySelector('.loading').style.display = 'block';
+    document.querySelector('.weather-info').style.display = 'none';
+
+    const weatherData = await fetchWeatherData(DEFAULT_LOCATION);
+
+    document.querySelector('.loading').style.display = 'none';
+
+    if (weatherData) {
+        const processedWeatherData = processWeatherData(weatherData);
+        displayWeather(processedWeatherData);
+    }
+});

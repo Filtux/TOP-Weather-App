@@ -11,7 +11,7 @@ body {
 }
 
 .header-container {
-    width: 100%; /* Ensure header spans full width */
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 1rem;
@@ -20,16 +20,16 @@ body {
 }
 
 .body-container {
-    flex: 1; /* Allow the main content to grow and fill available space */
+    flex: 1;
     text-align: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    width: 100%; /* Ensure main content spans full width */
-    max-width: 800px; /* Limit max width for better readability */
-    margin: 20px auto; /* Center the content */
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .weather-title-container {
@@ -69,12 +69,12 @@ button:hover {
     margin-top: 20px;
 }
 
-#weather-info, #astronomy-info {
+.weather-info {
     margin-top: 20px;
 }
 
 .footer-container {
-    width: 100%; /* Ensure footer spans full width */
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 1rem;
