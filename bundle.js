@@ -34,7 +34,7 @@ body {
 }
 
 .header-container {
-    width: 100%; /* Ensure header spans full width */
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 1rem;
@@ -43,16 +43,16 @@ body {
 }
 
 .body-container {
-    flex: 1; /* Allow the main content to grow and fill available space */
+    flex: 1;
     text-align: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    width: 100%; /* Ensure main content spans full width */
-    max-width: 800px; /* Limit max width for better readability */
-    margin: 20px auto; /* Center the content */
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .weather-title-container {
@@ -92,18 +92,18 @@ button:hover {
     margin-top: 20px;
 }
 
-#weather-info, #astronomy-info {
+.weather-info {
     margin-top: 20px;
 }
 
 .footer-container {
-    width: 100%; /* Ensure footer spans full width */
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
     box-sizing: border-box;
-}`, "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":"AAAA,eAAe;AACf;IACI,8BAA8B;IAC9B,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,aAAa;IACb,SAAS;IACT,yBAAyB;AAC7B;;AAEA;IACI,WAAW,EAAE,mCAAmC;IAChD,gBAAgB;IAChB,WAAW;IACX,aAAa;IACb,kBAAkB;IAClB,sBAAsB;AAC1B;;AAEA;IACI,OAAO,EAAE,4DAA4D;IACrE,kBAAkB;IAClB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,uCAAuC;IACvC,sBAAsB;IACtB,WAAW,EAAE,yCAAyC;IACtD,gBAAgB,EAAE,2CAA2C;IAC7D,iBAAiB,EAAE,uBAAuB;AAC9C;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,uBAAuB;IACvB,SAAS;AACb;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,kBAAkB;IAClB,sBAAsB;AAC1B;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,WAAW;IACX,eAAe;AACnB;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,WAAW,EAAE,mCAAmC;IAChD,gBAAgB;IAChB,WAAW;IACX,aAAa;IACb,kBAAkB;IAClB,sBAAsB;AAC1B","sourcesContent":["/* styles.css */\r\nbody {\r\n    font-family: Arial, sans-serif;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    margin: 0;\r\n    background-color: #f0f0f0;\r\n}\r\n\r\n.header-container {\r\n    width: 100%; /* Ensure header spans full width */\r\n    background: #333;\r\n    color: #fff;\r\n    padding: 1rem;\r\n    text-align: center;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.body-container {\r\n    flex: 1; /* Allow the main content to grow and fill available space */\r\n    text-align: center;\r\n    background: #fff;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n    box-sizing: border-box;\r\n    width: 100%; /* Ensure main content spans full width */\r\n    max-width: 800px; /* Limit max width for better readability */\r\n    margin: 20px auto; /* Center the content */\r\n}\r\n\r\n.weather-title-container {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: center;\r\n    gap: 20px;\r\n}\r\n\r\nform {\r\n    margin-bottom: 20px;\r\n}\r\n\r\ninput {\r\n    padding: 10px;\r\n    margin-right: 10px;\r\n    border-radius: 5px;\r\n    border: 1px solid #ccc;\r\n}\r\n\r\nbutton {\r\n    padding: 10px 20px;\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: #007BFF;\r\n    color: #fff;\r\n    cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #0056b3;\r\n}\r\n\r\n#loading {\r\n    font-size: 1.2em;\r\n    margin-top: 20px;\r\n}\r\n\r\n#weather-info, #astronomy-info {\r\n    margin-top: 20px;\r\n}\r\n\r\n.footer-container {\r\n    width: 100%; /* Ensure footer spans full width */\r\n    background: #333;\r\n    color: #fff;\r\n    padding: 1rem;\r\n    text-align: center;\r\n    box-sizing: border-box;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":"AAAA,eAAe;AACf;IACI,8BAA8B;IAC9B,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,aAAa;IACb,SAAS;IACT,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,WAAW;IACX,aAAa;IACb,kBAAkB;IAClB,sBAAsB;AAC1B;;AAEA;IACI,OAAO;IACP,kBAAkB;IAClB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,uCAAuC;IACvC,sBAAsB;IACtB,WAAW;IACX,gBAAgB;IAChB,iBAAiB;AACrB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,uBAAuB;IACvB,SAAS;AACb;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,kBAAkB;IAClB,kBAAkB;IAClB,sBAAsB;AAC1B;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,WAAW;IACX,eAAe;AACnB;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,WAAW;IACX,aAAa;IACb,kBAAkB;IAClB,sBAAsB;AAC1B","sourcesContent":["/* styles.css */\r\nbody {\r\n    font-family: Arial, sans-serif;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    margin: 0;\r\n    background-color: #f0f0f0;\r\n}\r\n\r\n.header-container {\r\n    width: 100%;\r\n    background: #333;\r\n    color: #fff;\r\n    padding: 1rem;\r\n    text-align: center;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.body-container {\r\n    flex: 1;\r\n    text-align: center;\r\n    background: #fff;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n    box-sizing: border-box;\r\n    width: 100%;\r\n    max-width: 800px;\r\n    margin: 20px auto;\r\n}\r\n\r\n.weather-title-container {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: center;\r\n    gap: 20px;\r\n}\r\n\r\nform {\r\n    margin-bottom: 20px;\r\n}\r\n\r\ninput {\r\n    padding: 10px;\r\n    margin-right: 10px;\r\n    border-radius: 5px;\r\n    border: 1px solid #ccc;\r\n}\r\n\r\nbutton {\r\n    padding: 10px 20px;\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: #007BFF;\r\n    color: #fff;\r\n    cursor: pointer;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #0056b3;\r\n}\r\n\r\n#loading {\r\n    font-size: 1.2em;\r\n    margin-top: 20px;\r\n}\r\n\r\n.weather-info {\r\n    margin-top: 20px;\r\n}\r\n\r\n.footer-container {\r\n    width: 100%;\r\n    background: #333;\r\n    color: #fff;\r\n    padding: 1rem;\r\n    text-align: center;\r\n    box-sizing: border-box;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -639,41 +639,41 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 var WEATHER_API_KEY = '6013851a6d2249b184e100322240706';
 var WEATHER_API_URL = "https://api.weatherapi.com/v1/forecast.json?key=".concat(WEATHER_API_KEY, "&q=");
-var DEFAULT_LOCATION = Adelaide;
+var DEFAULT_LOCATION = 'Melbourne';
 function fetchWeatherData(_x) {
   return _fetchWeatherData.apply(this, arguments);
 }
 function _fetchWeatherData() {
-  _fetchWeatherData = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(location) {
+  _fetchWeatherData = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(location) {
     var response, data;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
         case 0:
-          _context2.prev = 0;
-          _context2.next = 3;
+          _context3.prev = 0;
+          _context3.next = 3;
           return fetch("".concat(WEATHER_API_URL).concat(location));
         case 3:
-          response = _context2.sent;
+          response = _context3.sent;
           if (response.ok) {
-            _context2.next = 6;
+            _context3.next = 6;
             break;
           }
           throw new Error('Network response was not ok');
         case 6:
-          _context2.next = 8;
+          _context3.next = 8;
           return response.json();
         case 8:
-          data = _context2.sent;
-          return _context2.abrupt("return", data);
+          data = _context3.sent;
+          return _context3.abrupt("return", data);
         case 12:
-          _context2.prev = 12;
-          _context2.t0 = _context2["catch"](0);
-          console.error('Fetching weather data failed:', _context2.t0);
+          _context3.prev = 12;
+          _context3.t0 = _context3["catch"](0);
+          console.error('Fetching weather data failed:', _context3.t0);
         case 15:
         case "end":
-          return _context2.stop();
+          return _context3.stop();
       }
-    }, _callee2, null, [[0, 12]]);
+    }, _callee3, null, [[0, 12]]);
   }));
   return _fetchWeatherData.apply(this, arguments);
 }
@@ -736,9 +736,28 @@ document.querySelector('.location-form').addEventListener('submit', /*#__PURE__*
     return _ref.apply(this, arguments);
   };
 }());
-window.addEventListener('load', function () {
-  fetchAndDisplayData(DEFAULT_LOCATION);
-});
+window.addEventListener('load', /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+  var weatherData, processedWeatherData;
+  return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+    while (1) switch (_context2.prev = _context2.next) {
+      case 0:
+        document.querySelector('.loading').style.display = 'block';
+        document.querySelector('.weather-info').style.display = 'none';
+        _context2.next = 4;
+        return fetchWeatherData(DEFAULT_LOCATION);
+      case 4:
+        weatherData = _context2.sent;
+        document.querySelector('.loading').style.display = 'none';
+        if (weatherData) {
+          processedWeatherData = processWeatherData(weatherData);
+          displayWeather(processedWeatherData);
+        }
+      case 7:
+      case "end":
+        return _context2.stop();
+    }
+  }, _callee2);
+})));
 })();
 
 /******/ })()
