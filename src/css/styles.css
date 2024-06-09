@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -9,12 +10,34 @@ body {
     background-color: #f0f0f0;
 }
 
-.container {
+.header-container {
+    width: 100%; /* Ensure header spans full width */
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.body-container {
+    flex: 1; /* Allow the main content to grow and fill available space */
     text-align: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%; /* Ensure main content spans full width */
+    max-width: 800px; /* Limit max width for better readability */
+    margin: 20px auto; /* Center the content */
+}
+
+.weather-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 form {
@@ -48,4 +71,13 @@ button:hover {
 
 #weather-info, #astronomy-info {
     margin-top: 20px;
+}
+
+.footer-container {
+    width: 100%; /* Ensure footer spans full width */
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
 }

@@ -7,29 +7,33 @@
         <title>Template</title>
     </head>
     <body>
-        <div class="container">
+        <div class="header-container">
             <h1>Weather App</h1>
             <form class="location-form">
                 <input type="text" class="location-input" placeholder="Enter location" required>
-                <button type="submit">Get Weather</button>
+                <button type="submit">Get Today's Weather</button>
             </form>
+        </div>
+        <div class="body-container">
             <div class="loading" style="display:none;">Loading...</div>
             <div class="weather-info" style="display:none;">
-                <h2 class="weather-location"></h2>
+                <div class="weather-title-container">
+                    <h2 class="weather-location"></h2>
+                    <img class="weather-icon" src="">                    
+                </div>
                 <p class="weather-description"></p>
                 <p class="weather-temperature"></p>
                 <p class="weather-cloudCover"></p>
                 <p class="weather-precipitation"></p>
+                <p class="weather-minMaxTemp"></p>
+                <p class="weather-maxTemp"></p>
+                <p class="weather-avgTemp"></p>
                 <p class="weather-uv"></p>
+                <p class="sunrise_sunset"></p>         
             </div>
-            <div class="astronomy-info" style="display:none;">
-                <h2>Astronomy Information</h2>
-                <p class="sunrise"></p>
-                <p class="sunset"></p>
-                <p class="moonphase"></p>
-                <p class="moonrise"></p>
-                <p class="moonset"></p>
-            </div>
+        </div>
+        <div class="footer-container">
+            &copy; Joe Matthews
         </div>
     </body>
 </html>
